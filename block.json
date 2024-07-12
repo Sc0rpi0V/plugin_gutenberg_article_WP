@@ -1,0 +1,65 @@
+{
+  "apiVersion": 2,
+  "name": "create-block/gutenberg-article",
+  "category": "gutenberg",
+  "icon": "admin-post",
+  	"attributes": {
+	  "title": {
+		"type": "string",
+		"selector": ".list-article-title"
+	  },
+	  "category": {
+		"type": "string",
+		"selector": ".list-article-category",
+		"default": ""
+	  },
+	  "listArticle": {
+		"type": "array",
+		"selector": ".list-article",
+		"default": []
+	  },
+	  "style": {
+		"type": "string",
+		"default": "1"
+	  },
+	  "btnAllArticles": {
+		"type": "boolean",
+		"default": false
+	  },
+	  "btnRandom": {
+		"type": "boolean",
+		"default": false
+	  },
+	  "btnAll": {
+		"type": "string",
+		"default": "2"
+	  },
+	  "btnTxtAllArticles": {
+		"type": "string",
+		"default": ""
+	  },
+		"btnTxtAllMetiers": {
+			"type": "string",
+			"default": ""
+		},
+	  "btnUrlAllArticles": {
+		"type": "string",
+		"default": ""
+	  },
+	  "btnTxtAllCustom": {
+		"type": "string",
+		"default": ""
+	  },
+	  "btnUrlAllCustom": {
+		"type": "string",
+		"default": ""
+	  }
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "gutenberg-article",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
